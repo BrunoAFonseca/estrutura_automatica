@@ -30,8 +30,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Rota principal
 app.get('/', (req, res) => {
     res.render('home', { 
-        title: 'Loja Virtual', 
-        heading: 'Bem-vindo!', 
+        title: 'Olá Mundo!', 
+        heading: '', 
         description: 'Explore nossos produtos incríveis.' 
     });
 });
@@ -47,17 +47,17 @@ app.listen(PORT, () => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja Virtual</title>
+  <title>Olá Mundo!</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Bem-vindo à Loja Virtual</h1>
+  <h1>Olá Mundo!</h1>
   <script src="js/main.js"></script>
 </body>
 </html>
 `,
     'public/css/style.css': `body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }`,
-    'public/js/main.js': `console.log('Bem-vindo à Loja Virtual!');`,
+    'public/js/main.js': `console.log('Bem-vindo à Olá Mundo!!');`,
     'views/home.liquid': `
 <!DOCTYPE html>
 <html lang="en">
@@ -73,7 +73,7 @@ app.listen(PORT, () => {
 </html>
 `,
     'routes/api.js': `// Aqui você pode criar rotas de API`,
-    'README.md': `# Loja Virtual\nProjeto criado automaticamente com Node.js`
+    'README.md': `# Olá Mundo!\nProjeto criado automaticamente com Node.js`
 };
 
 // Criar pastas
